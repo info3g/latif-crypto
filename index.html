@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<title>home</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='js/index.js' type='text/javascript'></script>
+
+</head>
+
+ <body class="outer">
+		<header class="main-header">
+		  <div class="top-hed">
+			   <div class="container">
+				  <div class="logo">
+					  <a href="#">
+                        <img src="img/logo.svg" alt="logo"> 
+                      </a>
+				  </div>
+                  <div class="logo mobile-logo">
+					  <a href="#">
+                        <img src="img/mobile-logo.svg" alt="logo"> 
+                      </a>
+				  </div>
+
+                  <div class="mobile-toggle" onclick="navopen()">
+                      <img src="img/Burger.svg" alt="Burger"> 
+                  </div>
+				  <nav class="nav">
+					 <ul>
+						 <li><a href="#">About</a></li>  
+						 <li><a href="#">FAQ</a></li>
+						 <li><a href="#">Blog</a></li>
+						 <li><a href="#">Login</a></li>
+					 </ul>
+				  </nav>
+			   </div>
+		   </div>
+		</header>
+		
+<div class="middle-sec">
+        <div class="container">
+                <div class="box-form">
+                     <h2>Cryptocurrency Exchange</h2>
+                <form name ="cryptoForm" onsubmit="return validation();" novalidate>
+
+                <div class="send_section">
+
+                        <div class="send_amountdropdown">
+                                <input type="text" name="name" class="send_token" id="sendInput" onkeyup="sendValueCheck()" required/>
+        
+                                <label for="nme">
+                                        <div id="sendText">YOU SEND</div>
+                                        <div id="errors" style="color:red;">
+
+                                        </div>
+                                        <div id="sendnumbersOnly" style="color:red;font-size: 12px;"></div>
+                                </label>
+        
+                                
+        
+                                <span id="imgappend" onclick="sendDropdownlist()"></span>
+                                <input class="text-overlay" type = "text" id="secinp" readonly onclick="sendDropdownlist()">       
+                        </div>
+                                    
+                <div class="send_search">
+                        <a class="close" onclick="clearinp()">X</a>
+
+                        <i class="fa fa-search" aria-hidden="true"></i>
+
+                        <input class="fa-search" type="text" id="placeSelect"  onclick="sendAddclass()" onkeyup="searchSendList()" placeholder="Search"/>
+                </div>
+                                    
+                <div class="send_dropdownlist">
+                        <ul id='send_show_dropdownlist'>
+                                <div class="send_empty_dropdownList_message">
+                                        <b>No Results Found</b>
+                                </div>
+                        </ul>
+                </div>
+                </div>
+
+
+                <div class="send_section receive_section">
+
+                        <div class="Get_amountdropdown">
+                                <input type="text" name="name" class="get_token" id="getInput" onkeyup="getValueCheck()" required autocomplete="off" />
+        
+                                <label for="nme">
+                                        <div id="getText">YOU GET</div>
+                                        <div id="errorsGet" style="color:red;"></div>
+                                        <div id="receivenumbersOnly" style="color:red;font-size: 12px;"></div>
+                                </label>
+        
+                                <span id="imgappend2" onclick="getDropdownlist()"></span>
+        
+                                <input class="text-overlay" type = "text" id="secinp2" readonly onclick="getDropdownlist()"> 
+                        </div>
+
+                <div class="get_search">
+                        <a class="close" onclick="clearinp()">X</a>
+
+                        <i class="fa fa-search" aria-hidden="true"></i>
+
+                        <input class="fa-search" type="text" id="placeSelect2"  onclick="getAddclass()" onkeyup="searchGetList()" placeholder="Search"/>
+                </div>
+                             
+                <div class="get_dropdownlist">
+                        <ul id='get_show_dropdownlist'>
+
+                                <div class="receive_empty_dropdownlist_message">
+                                     <b>No Results Found</b>
+                                </div>
+                        </ul>
+                </div>
+                              
+                </div>
+
+
+        
+                <input type="text" name="name" class="WalletAdd" required id="walletInput" onkeyup="walletValueCheck()"/>
+
+                <label for="nme">
+                        <div id="walletText">YOUR WALLET ADDRESS</div>
+                        <div id="errorsWallet" style="color:red;"></div>
+                </label>
+
+                <div class="submit-button"> 
+                        <button type="submit" value="Exchange" class="btnsubmit" >Exchange</button>
+                </div>
+               
+                </form>
+
+                </div>
+        </div>
+</div>
+
+<footer class="main-footer">
+	<div class="container">
+		 <div class="social-icon">
+            <ul>
+               <li><a href="#"><i class="fas fa-paper-plane"></i></a></li>
+               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fab fa-bitcoin"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+         </div>
+	</div>
+</footer>
+    
+</html>

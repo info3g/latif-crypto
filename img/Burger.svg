@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Burger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-White-/-Burger" transform="translate(-7.000000, -10.000000)">
+            <g id="Burger">
+                <path d="M7.31864228,11.5116279 L27.7117485,11.5116279 L7.31864228,11.5116279 Z M7.31864228,24.8139535 L22.7117485,24.8139535 L7.31864228,24.8139535 Z M7.31864228,18.1627907 L17.7117485,18.1627907 L7.31864228,18.1627907 Z" id="menu" stroke="#000000" stroke-width="2" stroke-linecap="square" transform="translate(17.515195, 18.406977) scale(-1, 1) translate(-17.515195, -18.406977) "></path>
+                <rect id="bound" fill="#E0E0E0" opacity="0" x="0" y="0" width="36" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
